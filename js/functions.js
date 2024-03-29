@@ -49,7 +49,7 @@ var slideBottom = {
 };
 
 ScrollReveal().reveal('.inicioA', slideLeft);
-ScrollReveal().reveal('.history', { delay: 200, viewFactor: 0.3, duration: 1000 });
+ScrollReveal().reveal('.history', { delay: 200, viewFactor: 0.3, duration: 500 });
 ScrollReveal().reveal('.revealA', slideBottom);
 ScrollReveal().reveal('.revealB', slideBottom);
 ScrollReveal().reveal('.grid-img', { delay: 500, duration: 500 });

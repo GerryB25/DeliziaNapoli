@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    scrollbar-width: none;
+}
+
+nav {
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+}
+
+.navbar-brand {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.central-items {
+    width: 75%;
+}
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.nav-link:hover {
+    color: white;
+    scale: 1.1;
+    text-shadow: 0 0 30px rgba(231, 77, 39), 0 0 60px rgba(231, 77, 39), 0 0 100px rgba(231, 77, 39);
+}
+
+.inicio {
+    background-image: url(/media/bg-pizza.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-inicio {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    padding: 9rem 3rem;
+}
+
+.content-inicio h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.content-inicio h2 {
+    color: white;
+    font-size: 30px;
+    text-wrap: balance;
+}
+
+.content-inicio button {
+    background-color: rgb(231, 53, 53);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 22px;
+    padding: 7px 12px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.content-inicio button:hover {
+    scale: 1.1;
+}
+
+.history {
+    width: 100%;
+    color: black;
+    padding: 4rem 14rem;
+    text-align: center;
+}
+
+.history p {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: end;
+    letter-spacing: 1px;
+}
+
+.ordernow {
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+    background-image: url(/media/bg-neon.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-ordernow {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-ordernow h2 {
+    color: white;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.content-ordernow button {
+    border: none;
+    background-color: rgb(231, 53, 53);
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.content-ordernow button:hover {
+    scale: 1.1;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.gallery h2 {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    color: black;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    width: 100%;
+    row-gap: 40px;
+}
+
+.grid-img {
+    width: 350px;
+    height: 220px;
+    margin: 0 auto;
+    border-radius: 30px;
+    aspect-ratio: 16/9;
+    position: relative;
+}
+
+.grid-img img {
+    border-radius: 30px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.grid-text {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border: none;
+    background-color: transparent;
+    font-family: 'Great Vibes';
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-wrap: nowrap;
+    text-shadow: 0px 3px 0px rgba(0, 0, 0);
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.grid-img:hover .img-fluid {
+    filter: brightness(0.7) blur(2px);
+}
+
+.grid-img:hover .grid-text {
+    font-size: 26px;
+    letter-spacing: 5px;
+}
+
+.modal-content,
+.modal-body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border-radius: 30px;
+}
+
+.promo-content img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.promo-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #090909 100%);
+    border-radius: 30px;
+}
+
+.promo-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    border-radius: 30px;
+    padding: 3rem 2rem;
+    font-size: 18px;
+}
+
+.text-footer p {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+    color: white;
+    border-radius: 30px;
+    padding: 2rem 3rem;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 700;
+    font-size: 34px;
+    letter-spacing: 2px;
+    text-shadow: 0px 5px 0px rgba(0, 0, 0);
+}
+
+.mapbox {
+    background-image: url(/media/fondo-map.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-map {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-map h2 {
+    color: white;
+}
+
+.mapas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    width: 100%;
+    height: 100%;
+    row-gap: 20px;
+}
+
+.map {
+    width: 450px;
+    height: 350px;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+.marker-image {
+    width: 200px;
+    aspect-ratio: 16/9;
+}
+
+.marker-image img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+}
+
+footer .icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 66%;
+}
+
+.icons a {
+    font-size: 40px;
+    color: black;
+}
+
+.icons a:hover {
+    filter: drop-shadow(0 0 20px rgba(231, 77, 39));
+}
+
+.footer-buttons {
+    width: 100%;
+}
+
+.footer-buttons ul {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-buttons a {
+    color: black;
+}
+
+@media (max-width: 993px) {
+    .central-items {
+        width: 100%;
+    }
+
+    .nav-link:hover {
+        scale: 1;
+        transform: translateX(5px);
+    }
+
+    .gallery {
+        margin: 3rem 0rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .content-inicio {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 1rem;
+    }
+
+    .content-inicio h1 {
+        font-size: 50px;
+    }
+
+    .content-inicio h2 {
+        font-size: 20px;
+    }
+
+    .history {
+        padding: 2rem 5rem;
+        text-wrap: balance;
+    }
+
+    .history p {
+        font-size: 20px;
+        margin-top: 2rem;
+    }
+
+    .content-ordernow h2 {
+        font-size: 40px;
+        letter-spacing: 0px;
+    }
+
+    .content-ordernow button {
+        margin: 2rem 0rem;
+    }
+
+    .gallery {
+        margin: 3rem 0rem;
+    }
+
+    .content-map h2 {
+        text-align: center;
+    }
+
+    .mapas {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    }
+
+    .map {
+        width: 340px;
+        height: 240px;
+    }
+
+    .icons a {
+        font-size: 30px;
+    }
+}

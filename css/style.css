@@ -411,6 +411,7 @@ footer .icons {
 
     .content-map h2 {
         text-align: center;
+        color: red;
     }
 
     .mapas {
@@ -423,6 +424,11 @@ footer .icons {
         height: 240px;
     }
 
+    .marker-image {
+    width: 100px;
+    aspect-ratio: 16/9;
+    } 
+    
     .icons a {
         font-size: 30px;
     }

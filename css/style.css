@@ -162,6 +162,7 @@ nav {
     font-weight: 700;
     font-size: 40px;
     color: black;
+    text-align:center;
     letter-spacing: 2px;
     margin-bottom: 3rem;
 }
@@ -411,7 +412,6 @@ footer .icons {
 
     .content-map h2 {
         text-align: center;
-        color: red;
     }
 
     .mapas {
